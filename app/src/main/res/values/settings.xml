@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="admin">0</string>
+
+    <string name="nombre_user">Nombre</string>
+    <string name="id_user">id</string>
+    <string name="email_user">Email</string>
+    <string name="pass_user">Password</string>
+    <string name="admin_user">Telefono</string>
+
+
+</resources>

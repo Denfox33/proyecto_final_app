@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:translationZ="10dp"
+    android:layout_margin="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="4dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/limg"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fotodef"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/euro"
+            android:text="50"
+            android:textSize="25sp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/precio"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="€"
+            android:textSize="25sp"
+            android:layout_margin="6dp"
+            android:id="@+id/euro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoriatxt"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            app:layout_constraintStart_toEndOf="@id/limg"
+            android:text="@string/categoria"
+            android:layout_margin="10sp"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toTopOf="@id/disponible"
+            app:layout_constraintVertical_bias="0"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoria"
+            app:layout_constraintTop_toBottomOf="@id/nombre"
+            app:layout_constraintStart_toEndOf="@id/categoriatxt"
+            android:text="Categoria"
+            android:layout_margin="10sp"
+            android:textSize="19sp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintBottom_toTopOf="@id/disponible"/>
+
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nombre"
+            android:textSize="25sp"
+            app:layout_constraintStart_toEndOf="@id/limg"
+            app:layout_constraintEnd_toStartOf="@id/precio"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/disponible"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:background="@color/black2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/limg"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="20dp"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/comprar"
+            android:text="Comprar"
+            app:layout_constraintStart_toEndOf="@id/limg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/black2"
+            android:layout_margin="10dp"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

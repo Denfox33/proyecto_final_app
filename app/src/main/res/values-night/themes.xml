@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PracticaFinal" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">#AFABAB</item>
+
+        <item name="colorOnPrimary">#EBF5FB</item>
+        <item name="colorOnSurface">#616EE1</item>
+        <item name="colorSurface">#C3C4C5C7</item>
+        <item name="colorOnBackground">#D0DC4F4F</item>
+
+        <item name="colorSecondary">#485CDC</item>
+        <item name="colorSecondaryVariant">#8772BF</item>
+        <item name="colorOnSecondary">#EBF5FB</item>
+
+        <item name="colorError">#FF0000</item>
+
+    </style>
+</resources>

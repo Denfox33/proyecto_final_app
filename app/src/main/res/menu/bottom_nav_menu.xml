@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cartas"
+        android:icon="@drawable/card"
+        android:title="Cartas" />
+
+    <item
+        android:id="@+id/eventos"
+        android:icon="@drawable/eventos"
+        android:title="Eventos" />
+
+    <item
+        android:id="@+id/pedidos"
+        android:icon="@drawable/pedidos"
+        android:title="Pedidos" />
+    <item
+        android:id="@+id/confi"
+        android:icon="@drawable/confi"
+        android:title="Pedidos" />
+
+
+</menu>
